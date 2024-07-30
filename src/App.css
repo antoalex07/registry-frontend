@@ -241,19 +241,7 @@
     left: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-  }
-
-  .get-employee .fixed-content {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: #d9eff5;
-    width: 50vw;
-    height: 100vh;
   }
 
   .get-employee h1 {
@@ -261,38 +249,77 @@
     font-size: 40px;
   }
 
-  .get-employee .paper {
-    padding: 5px 1px;
+  .get-employee .fixed-content {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.5);
     width: 50vw;
-    border-radius: 10px;
-    background-color: #c2f3dd;  
+    height: 60vh;
+  }
+
+  .get-employee .paper {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    width: 97.5%;
+    margin: 0 auto;
+    background-color: #aeffea;  
   }
 
   .get-employee .search-bar {
+    flex-grow: 1;
+    margin-right: 10px;
     margin-top: 0.5em;
+    font-family: "Lato", sans-serif;
     font-size: larger;
+    font-weight: 700;
+    left: 2em;
     padding: 1px;
   }
 
   .get-employee .search-icon {
-    margin-bottom: 5px;
-    left: 0.75em;
+    font-size: 1.5em;
   }
 
-  .get-employee .or-part {
+  .get-employee .advance-search {
     display: flex;
-    align-items: center;
-  }
-
-  .get-employee hr {
-    flex: 1;
-    /* border: none; */
-    border-top: 1px solid #000;
-    margin: 0 10px;
-    width: 10px;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 2em;
+    width: 85%;
   }
 
   .get-employee h2 {
-    margin: 0z;
+    font-family: "Lato", sans-serif;
+    color: #999;
+    font-size: 14px;
+    padding-top: 1em;
+    margin-bottom: -12px;
+  }
+
+  .get-employee .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2em;
+  }
+
+  .get-employee .paper-second {
+    display: flex;
+    align-items: center;
+    width: 20vw;
+    justify-content: space-between;
+    background-color: #aeffea;
+  }
+
+  .get-employee .row-last {
+    position: relative;
+    padding-left: 84%;
+  }
+
+  .get-employee .submit-button {
+    font-size: 14px;
   }
 }
