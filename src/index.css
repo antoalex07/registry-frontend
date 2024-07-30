@@ -1,0 +1,7 @@
+html, 
+body, 
+#root {
+  background-image: linear-gradient(to top, #369df0, #8ab2f4, #bcc9f7, #e2e3fb, #ffffff);  
+  background-attachment: fixed;
+  background-size: cover;
+}
