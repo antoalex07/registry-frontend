@@ -54,6 +54,7 @@ const GetEmployee = () => {
             <SearchRoundedIcon className='search-icon' htmlColor='#8e8e8e'/>
           </IconButton>  
         </Paper>
+        
         <div className='advance-search'>
           <div className='desc'>
             <h2>ADVANCED SEARCH</h2>
@@ -90,7 +91,7 @@ const GetEmployee = () => {
                 value={employee.overtimeRate}/>
             </Paper>
           </div>
-          <div className='row-third'>
+          <div className='row-last'>
             <ThemeProvider theme={theme}>
               <Button variant='contained' className='submit-button'>
                 Search
