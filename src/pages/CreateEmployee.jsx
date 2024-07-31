@@ -30,6 +30,11 @@ const CreateEmployee = () => {
       overtimeRate: '',
       dueAmount: ''
     })
+    const [dialog, setDialog] = useState({
+      open: false,
+      message: "",
+      success: false
+     })
     
     const handleKeyPress = (event) => {
       if(event.key === 'Enter'){
@@ -49,6 +54,8 @@ const CreateEmployee = () => {
 
     const handleSubmit = (event) => {
 
+      event.preventDefault();
+
       let hasError = false;
       const newErrors = {};
 
@@ -62,11 +69,28 @@ const CreateEmployee = () => {
       setErrors(newErrors);
 
       if(!hasError){
-        event.preventDefault();
         const jsonData = JSON.stringify(employee);
         console.log(jsonData);
+
+
+    /*  try {
+          const response = await axios.post('/api/employee', employee); // Replace with your API endpoint
+          if (response.status === 200) {
+            setDialog({ open: true, message: 'Employee registered successfully!', success: true });
+          } else {
+            setDialog({ open: true, message: 'Registration failed!', success: false });
+          }
+        } catch (error) {
+          setDialog({ open: true, message: 'Registration failed!', success: false });
+        } */
+
       }
-  }
+    }
+
+
+    const closeDialog = () => {
+      setDialog({ open: false, message: '', success: false });
+    };
 
     const theme = createTheme({
       palette: {
@@ -228,6 +252,12 @@ const CreateEmployee = () => {
               Submit
             </Button>
           </ThemeProvider>
+          {dialog.open && (
+            <div className={`dialog ${dialog.success ? 'success' : 'failure'}`}>
+              <p>{dialog.message}</p>
+              <button onClick={closeDialog}>Close</button>
+            </div>
+          )}
         </div>
       </div>
     </div>
