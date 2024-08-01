@@ -414,4 +414,87 @@
     border-radius: 30px;
   }
 
+  .delete-employee {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    top: 0;
+    left: 0;
+    z-index: -3;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .delete-employee .form {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    background-image: linear-gradient(to right, #ffffff, #feffff, #fdffff, #fbffff, #f9ffff);    
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 70vw;
+    height: 90vh;
+    z-index: -4;
+  }
+
+  .delete-employee .image {
+    background-image: url("./assets/deleteEmployee.jpg");
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    z-index: -2;
+    height: 100%;
+    width: 40vw;
+  }
+
+  .delete-employee .back-button {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 40px;
+  }
+
+  .delete-employee .edit-form {
+    padding: 10px;
+    max-height: 85vh;
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+
+  .delete-employee h2 {
+    font-family: "Reem Kufi", sans-serif;
+    font-weight: 400;
+    margin-left: 0.5em;
+  }
+
+  .delete-employee .paper {
+    margin-top: 0.75em;
+    margin-left: 0.75em;
+    padding: 6px 4px;
+    display: flex;
+    width: 20vw;
+    border-radius: 30px;
+    align-items: center;
+    background-color: #c2f3dd;
+  }
+
+  .delete-employee .submit {
+    display: flex;
+    flex-direction: row;
+    padding-top: 2em;
+    padding-left: 2.75em;
+  }
+
+  .delete-employee .submit-button {
+    font-size: 14px;
+    width: 10vw;
+  }
+
 }
