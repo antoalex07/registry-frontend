@@ -7,6 +7,7 @@ import UpdateEmployee from './pages/UpdateEmployee'
 import DeleteEmployee from './pages/DeleteEmployee'
 import EmployeeRegister from './pages/EmployeeRegister'
 import GenerateBill from './pages/GenerateBill'
+import EmployeeDataPDF from './pages/sample'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path='/deleteEmployee'   element={<DeleteEmployee/>} />
         <Route path='/employeeRegister' element={<EmployeeRegister/>} />
         <Route path='/generateBill'     element={<GenerateBill/>} />
+        <Route path='/sample'           element={<EmployeeDataPDF/>} />
       </Routes>
     </div>
   )
