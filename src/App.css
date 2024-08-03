@@ -328,11 +328,61 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow-y: auto;
+    background: #fbffff;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .employee-register .calendar-container {
+    width: 50vw;
+    height: 100vh;
   }
 
   .employee-register .calendar {
     background: rgba(0, 0, 0, 0);
-    width: 50vw;
+    padding-top: 100px;
+    background-size: contain;
+  }
+
+  .employee-register .worksite-card {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+/* 
+  .employee-register .worksite-details {
+
+  } */
+
+  .employee-register .empty-file {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    padding-bottom: 20px;
+    margin-top: -10em;
+  }
+
+  .employee-register .empty-file h1 {
+    font-size: 27px;
+    margin-bottom: 5px;
+  }
+
+  .employee-register .empty-file p {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .employee-register .empty-file-image {
+    background-image: url("./assets/empty-folder.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 30vw;
+    height: 50vh;
   }
 
   .update-employee {
@@ -496,5 +546,4 @@
     font-size: 14px;
     width: 10vw;
   }
-
 }
