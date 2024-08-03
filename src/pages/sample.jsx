@@ -1,6 +1,5 @@
 import React from 'react';
 import { PDFDownloadLink, Document, Page, Text, View, StyleSheet, pdf } from '@react-pdf/renderer';
-import { PDFViewer } from '@react-pdf-viewer/react-pdf';
 
 // Sample employee data
 const sampleEmployeeData = {
@@ -41,6 +40,7 @@ const EmployeeDocument = ({ employeeData }) => (
         <Text style={styles.text}>Email: {employeeData.email}</Text>
         <Text style={styles.text}>Phone: {employeeData.phone}</Text>
         <Text style={styles.text}>Address: {employeeData.address}</Text>
+
         {/* Add more fields as needed */}
       </View>
     </Page>
