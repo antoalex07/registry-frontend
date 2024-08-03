@@ -4,4 +4,7 @@ body,
   background-image: linear-gradient(to top, #369df0, #8ab2f4, #bcc9f7, #e2e3fb, #ffffff);  
   background-attachment: fixed;
   background-size: cover;
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
