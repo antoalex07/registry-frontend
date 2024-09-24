@@ -133,7 +133,7 @@ const CreateEmployee = () => {
           }
           <Paper className='paper' component="form">
             <AccountCircleRoundedIcon sx={{ml: 1}} htmlColor='#818283' /> 
-            <InputBase id='name'
+            <InputBase id='name11'
                        sx={{ flex: 1, 
                              marginLeft: '10px', 
                              fontSize: '18px', 
